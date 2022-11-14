@@ -1,0 +1,32 @@
+.rewards {
+  display: flex;
+  flex-direction: column;
+  &-summary {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  &-details {
+    width: 100%;
+    padding: 0 1rem 3rem;
+  }
+  &-filters {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .rewards {
+    flex-direction: row;
+  }
+}
+@media (min-width: 992px) {
+  .rewards {
+    &-summary {
+      width: 30%;
+    }
+    &-details {
+      width: 70%;
+    }
+  }
+}

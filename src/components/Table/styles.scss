@@ -1,0 +1,45 @@
+.table {
+  &-default {
+    font-size: 0.9em;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    min-width: 400px;
+    border-collapse: collapse;
+    width: 100%;
+    thead {
+      tr {
+        background: #009879;
+        color: #ffffff;
+        text-align: left;
+      }
+      th {
+        padding: 1rem;
+      }
+    }
+    tbody {
+      tr {
+        text-align: left;
+        border-bottom: 1px solid #dddddd;
+
+        &:nth-of-type(even) {
+          background: #f3f3f3;
+        }
+        &:last-of-type {
+          border-bottom: 2px solid #009879;
+        }
+        &.total-tr {
+          background: rgba(40, 167, 69, 0.2);
+          font-weight: bold;
+          text-transform: uppercase;
+          color: #009879;
+
+          td:first-child::before {
+            content: 'Total';
+          }
+        }
+      }
+      td {
+        padding: 1rem;
+      }
+    }
+  }
+}
